@@ -18,7 +18,7 @@ function App() {
     }))
   };
   const handleClickBtn = () => {
-    axios.post('http://localhost:3306/registro', {
+    axios.post('https://localhost:3306/registro', {
       nome_produto: valores.nome_produto,
       valor_produto: valores.valor_produto,
 
@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
 
-    axios.get('http://localhost:3306/getprodutos').then((response) => {
+    axios.get('https://localhost:3306/getprodutos').then((response) => {
       setItems(response.data)
     });
 
