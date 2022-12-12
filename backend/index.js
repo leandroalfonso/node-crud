@@ -4,9 +4,9 @@ const mysql = require("mysql")
 const cors =require("cors")
 
 const db = mysql.createPool({
-    host:"localhost",
-    user:"root",
-    password:"root",
+    host:"https://www.db4free.net/",
+    user:"leandro",
+    password:"17171716",
     database: "bd_crud"
 
 });
