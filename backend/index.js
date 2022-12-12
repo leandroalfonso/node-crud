@@ -40,5 +40,5 @@ app.get("/getprodutos", (req, res)=>{
 
 
 app.listen(3306, ()=>{
-    console.log("rodando servidor")
+    console.log("servidor rodando na porta 3306")
 });
