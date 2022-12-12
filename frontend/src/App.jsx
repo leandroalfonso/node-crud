@@ -18,7 +18,7 @@ function App() {
     }))
   };
   const handleClickBtn = () => {
-    axios.post('http://localhost:3001/registro', {
+    axios.post('sql201.epizy.com:3306/registro', {
       nome_produto: valores.nome_produto,
       valor_produto: valores.valor_produto,
 
@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
 
-    axios.get('http://localhost:3001/getprodutos').then((response) => {
+    axios.get('sql201.epizy.com:3306/getprodutos').then((response) => {
       setItems(response.data)
     });
 
