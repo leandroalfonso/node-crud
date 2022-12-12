@@ -4,10 +4,10 @@ const mysql = require("mysql")
 const cors =require("cors")
 
 const db = mysql.createPool({
-    host:"https://www.db4free.net/",
-    user:"leandro",
-    password:"17171716",
-    database: "bd_crud"
+    host:"sql201.epizy.com",
+    user:"epiz_32732654",
+    password:"RHmeHkk9kgdXyLT",
+    database: "epiz_32732654_bd_crud"
 
 });
 app.use(cors())
@@ -39,6 +39,6 @@ app.get("/getprodutos", (req, res)=>{
 
 
 
-app.listen(3001, ()=>{
+app.listen(3306, ()=>{
     console.log("rodando servidor")
 });
